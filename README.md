@@ -2,4 +2,4 @@
 
 ## Author: Alvee Ejdanee
 
-This is the final project for college
+This is the final project for college class: Introduction to programming.
