@@ -1,4 +1,4 @@
-package org.alvee;
+package util;
 
 public class Util {
 

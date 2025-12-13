@@ -2,6 +2,7 @@ package org.alvee;
 
 import lombok.Getter;
 import lombok.Setter;
+import util.Util;
 
 @Getter
 public class Department {
