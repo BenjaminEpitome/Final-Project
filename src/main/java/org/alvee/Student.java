@@ -19,7 +19,7 @@ public class Student {
 
     // Constructor
     public Student(String studentName, Gender gender, Address address, Department department) {
-        this.studentName = studentName;
+        this.studentName = Util.toTitleCase(studentName);
         this.gender = gender;
         this.address = address;
         this.department = department;

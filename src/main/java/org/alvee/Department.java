@@ -28,7 +28,7 @@ public class Department {
     // constructor
     public Department(String departmentName) {
         if (isDepartmentNameValid(departmentName)) {
-            this.departmentName = departmentName;
+            this.departmentName = Util.toTitleCase(departmentName);
 
             // id generation
             this.departmentId = String.format("D%02d", nextId);

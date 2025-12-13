@@ -21,7 +21,7 @@ public class Course {
 
     // Constructor
     public Course(String courseName, double credits, Department department) {
-        this.courseName = courseName;
+        this.courseName = Util.toTitleCase(courseName);
         this.credits = credits;
         this.department = department;
 
