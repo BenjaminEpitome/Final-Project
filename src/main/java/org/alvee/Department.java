@@ -38,4 +38,27 @@ public class Department {
             this.departmentName = null;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "departmentId='" + departmentId + '\'' +
+                ", departmentName='" + departmentName + '\'' +
+                '}';
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Department)) return false;
+
+        Department other = (Department) obj;
+
+        return java.util.Objects.equals(departmentId, other.departmentId) &&
+                java.util.Objects.equals(departmentName, other.departmentName);
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(departmentId, departmentName);
+    }
 }
